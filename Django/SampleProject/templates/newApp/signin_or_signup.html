@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head meta charset = 'utf-8'>
+  <title>Go Ahead</title>
+</head>
+<body>
+  <form method="post">
+  {{signup.as_p}}
+  {% csrf_token %}
+  <input type = "submit" value ="Submit">
+</form>
+<form method = "post">
+{{signin.as_p}}
+{% csrf_token %}
+<input type = "submit" value ="Submit" >
+</form>
+{{errmsg}}
+  </body>
+</html>

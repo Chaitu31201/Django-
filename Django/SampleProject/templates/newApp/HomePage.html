@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to xxx enterprises</title>
+</head>
+
+<body>
+  <h1>XXX</h1>
+  <h1>We stand for quality. We look for latest Innovations</h1>
+  <a href = "{% url 'newApp:login' %}">Login</a>
+  <a href = "{% url 'newApp:signup' %}">SignUp</a>
+  {{before_login}}
+  {{after_login}}
+
+</body>
+</html>
